@@ -74,5 +74,4 @@ npx turbo link
 
 ## Useful Links
 
-Learn more about the power of Turborepo:
 Thanks to [Phyo Htet Arkar](https://github.com/phyohtetarkar)
