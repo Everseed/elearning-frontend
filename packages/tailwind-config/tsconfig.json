@@ -1,0 +1,6 @@
+{
+    "extends": "@ng-youth/typescript-config/base.json",
+    "include": ["."],
+    "exclude": ["node_modules", "dist"]
+  }
+  

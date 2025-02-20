@@ -1,5 +1,5 @@
 {
-  "name": "ngYde",
+  "name": "ng-youth",
   "private": true,
   "scripts": {
     "build": "turbo build",

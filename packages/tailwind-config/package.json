@@ -1,0 +1,25 @@
+{
+  "name": "@ng-youth/tailwind-config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "sideEffects": [
+    "*.css"
+  ],
+  "exports": {
+    ".": "./tailwind.config.ts",
+    "./index.css": "./index.css"
+  },
+  "devDependencies": {
+    "@ng-youth/typescript-config": "1.0.0",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.16",
+    "tailwindcss": "^4.0.6"
+  },
+  "dependencies": {
+    "@nextui-org/theme": "^2.4.5",
+    "@ng-youth/assets": "1.0.0",
+    "tailwindcss-animate": "^1.0.7"
+  }
+}

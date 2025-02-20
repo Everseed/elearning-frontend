@@ -1,0 +1,34 @@
+{
+  "name": "@ng-youth/global-store",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./slices": {
+      "types": "./dist/slices/index.d.ts",
+      "default": "./dist/slices/index.js"
+    }
+  },
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.5.1",
+    "react-redux": "^9.2.0",
+    "@ng-youth/lib": "1.0.0"
+  },
+  "devDependencies": {
+    "@ng-youth/eslint-config": "1.0.0",
+    "@ng-youth/typescript-config": "1.0.0",
+    "@types/eslint": "^9.6.1",
+    "@types/node": "^22.13.1",
+    "@types/react": "^19.0.8",
+    "eslint": "^9.20.1",
+    "typescript": "^5.7.3"
+  }
+}

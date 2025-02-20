@@ -1,0 +1,9 @@
+{
+  "name": "@ng-youth/assets",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -18,9 +18,9 @@ This Turborepo includes the following packages/apps:
 
 - `docs`: a [Next.js](https://nextjs.org/) app
 - `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+- `@ng-youth/ui`: a stub React component library shared by both `web` and `docs` applications
+- `@ng-youth/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- `@ng-youth/typescript-config`: `tsconfig.json`s used throughout the monorepo
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
@@ -47,7 +47,7 @@ To develop all apps and packages, run the following command:
 
 ```
 cd my-turborepo
-pnpm dev
+yarn dev
 ```
 
 ### Remote Caching
@@ -75,10 +75,4 @@ npx turbo link
 ## Useful Links
 
 Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+Thanks to [Phyo Htet Arkar](https://github.com/phyohtetarkar)

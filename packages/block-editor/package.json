@@ -1,0 +1,65 @@
+{
+ "name": "@ng-youth/block-editor",
+ "version": "1.0.0",
+ "main": "index.js",
+ "license": "MIT",
+ "exports": {
+  ".": {
+   "types": "./dist/index.d.ts",
+   "default": "./dist/index.js"
+  },
+  "./block-editor.css": "./src/styles/block-editor.css"
+ },
+ "scripts": {
+  "sass": "sass ./src/styles/tiptap.scss ./src/styles/tiptap.css --watch",
+  "dev": "tsc --watch",
+  "build": "tsc"
+ },
+ "devDependencies": {
+  "@ng-youth/eslint-config": "1.0.0",
+  "@ng-youth/tailwind-config": "1.0.0",
+  "@ng-youth/typescript-config": "1.0.0",
+  "@types/eslint": "^8.56.5",
+  "@types/katex": "^0.16.7",
+  "@types/node": "^20.11.24",
+  "@types/react": "^18",
+  "autoprefixer": "^10.4.20",
+  "eslint": "^8.57.0",
+  "postcss": "^8.4.47",
+  "sass": "^1.79.1",
+  "tailwindcss": "^3.4.13",
+  "typescript": "^5.7.3"
+ },
+ "dependencies": {
+  "@ng-youth/lib": "1.0.0",
+  "@ng-youth/ui": "1.0.0",
+  "@tiptap/core": "^2.11.5",
+  "@tiptap/extension-character-count": "^2.11.5",
+  "@tiptap/extension-code-block-lowlight": "^2.11.5",
+  "@tiptap/extension-heading": "^2.11.5",
+  "@tiptap/extension-image": "^2.11.5",
+  "@tiptap/extension-link": "^2.11.5",
+  "@tiptap/extension-placeholder": "^2.11.5",
+  "@tiptap/extension-table": "^2.11.5",
+  "@tiptap/extension-table-cell": "^2.11.5",
+  "@tiptap/extension-table-header": "^2.11.5",
+  "@tiptap/extension-table-row": "^2.11.5",
+  "@tiptap/extension-text-align": "^2.11.5",
+  "@tiptap/extension-text-style": "^2.11.5",
+  "@tiptap/extension-underline": "^2.11.5",
+  "@tiptap/extension-youtube": "^2.11.5",
+  "@tiptap/pm": "^2.11.5",
+  "@tiptap/react": "^2.11.5",
+  "@tiptap/starter-kit": "^2.11.5",
+  "@tiptap/suggestion": "^2.11.5",
+  "ai": "^4.1.34",
+  "highlight.js": "^11.11.1",
+  "katex": "^0.16.21",
+  "lowlight": "^3.3.0",
+  "lucide-react": "^0.475.0",
+  "react-markdown": "^9.0.3",
+  "tippy.js": "^6.3.7",
+  "tiptap-extension-global-drag-handle": "^0.1.16",
+  "tiptap-markdown": "^0.8.10"
+ }
+}
