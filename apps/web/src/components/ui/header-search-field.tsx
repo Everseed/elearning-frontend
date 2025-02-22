@@ -8,7 +8,7 @@ export default function HeaderSearchField() {
   const sp = useSearchParams();
   const router = useRouter();
   const [search, setSearch] = useState<string>();
-  
+
   useEffect(() => {
     setSearch(sp.get("q") ?? "");
   }, [sp]);

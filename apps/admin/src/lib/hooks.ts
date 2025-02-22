@@ -24,7 +24,7 @@ export function useCategories() {
     },
     {
       revalidateOnFocus: false,
-    }
+    },
   );
 
   return {
@@ -55,7 +55,7 @@ export function useTags() {
     },
     {
       revalidateOnFocus: false,
-    }
+    },
   );
 
   return {
@@ -86,7 +86,7 @@ export function useStaffs() {
     },
     {
       revalidateOnFocus: false,
-    }
+    },
   );
 
   return {

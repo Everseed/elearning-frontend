@@ -47,7 +47,7 @@ const TiptapStarterKit = StarterKit.configure({
   code: {
     HTMLAttributes: {
       class: cn(
-        "rounded-lg bg-muted text-red-700 dark:bg-muted/90 dark:text-red-400 px-1.5 py-1 font-mono font-medium before:content-none after:content-none"
+        "rounded-lg bg-muted text-red-700 dark:bg-muted/90 dark:text-red-400 px-1.5 py-1 font-mono font-medium before:content-none after:content-none",
       ),
       spellcheck: "false",
     },
@@ -96,7 +96,7 @@ const mathematics = Mathematics.configure({
 const codeBlock = CustomCodeBlock.configure({
   HTMLAttributes: {
     class: cn(
-      "rounded !bg-gray-800 dark:!bg-gray-900 text-gray-200 border p-5 font-mono font-medium"
+      "rounded !bg-gray-800 dark:!bg-gray-900 text-gray-200 border p-5 font-mono font-medium",
     ),
     spellcheck: false,
   },
@@ -110,7 +110,7 @@ const TiptapTable = Table.extend({
   renderHTML({ node, HTMLAttributes }) {
     const { colgroup, tableWidth, tableMinWidth } = createColGroup(
       node,
-      this.options.cellMinWidth
+      this.options.cellMinWidth,
     );
 
     const table: DOMOutputSpec = [
@@ -143,7 +143,7 @@ const TiptapTable = Table.extend({
 const TiptapTableHeader = TableHeader.configure({
   HTMLAttributes: {
     class: cn(
-      "bg-muted dark:bg-gray-900 border border-default p-2 text-start min-w-[150px] font-semibold"
+      "bg-muted dark:bg-gray-900 border border-default p-2 text-start min-w-[150px] font-semibold",
     ),
   },
 });
@@ -157,7 +157,7 @@ const TiptapTableCell = TableCell.configure({
 const TiptapLink = Link.configure({
   HTMLAttributes: {
     class: cn(
-      "!text-foreground underline underline-offset-[3px] transition-colors cursor-pointer"
+      "!text-foreground underline underline-offset-[3px] transition-colors cursor-pointer",
     ),
   },
   openOnClick: false,

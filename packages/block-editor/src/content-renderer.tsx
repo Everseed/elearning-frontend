@@ -23,7 +23,7 @@ const hljsCopyButtonPlugin: HLJSPlugin = {
 
     const copyButton = document.createElement("button");
     copyButton.className = cn(
-      "absolute text-sm rounded bg-gray-800/50 text-white/70 hover:text-white border border-white/70 hover:border-white top-3 end-3 px-2 py-0.5"
+      "absolute text-sm rounded bg-gray-800/50 text-white/70 hover:text-white border border-white/70 hover:border-white top-3 end-3 px-2 py-0.5",
     );
     copyButton.textContent = "Copy";
 

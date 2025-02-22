@@ -52,7 +52,7 @@ const DrawerContextProvider = ({ children }: { children: ReactNode }) => {
       {children}
     </DrawerContext.Provider>
   );
-}
+};
 
 const DrawerBackdrop = () => {
   const { isMenuOpen, toggle } = useContext(DrawerContext);
@@ -67,14 +67,10 @@ const DrawerBackdrop = () => {
           isMenuOpen
             ? "opacity-70 pointer-events-auto"
             : "opacity-0 pointer-events-none"
-        }`
+        }`,
       )}
     ></div>
   );
-}
+};
 
-export {
-  DrawerContext,
-  DrawerContextProvider,
-  DrawerBackdrop,
-}
+export { DrawerContext, DrawerContextProvider, DrawerBackdrop };

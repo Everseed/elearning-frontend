@@ -1,6 +1,12 @@
 import { API_URL_LOCAL } from "@/lib/constants";
 import { validateResponse } from "@/lib/validate-response";
-import { Button, Card, CardContent, ProfileAvatar, Separator } from "@ng-youth/ui";
+import {
+  Button,
+  Card,
+  CardContent,
+  ProfileAvatar,
+  Separator,
+} from "@ng-youth/ui";
 import { User, UserMeta } from "@ng-youth/lib/models";
 import { formatNumber } from "@ng-youth/lib/utils";
 import { cookies } from "next/headers";

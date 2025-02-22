@@ -21,9 +21,6 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "../i18n/I18nProvider";
 import { Globe, Menu, User } from "lucide-react";
 
-
-
-
 export default function Navbar({ user }: { user?: User | null }) {
   const { t, language, setLanguage } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,9 +30,7 @@ export default function Navbar({ user }: { user?: User | null }) {
     dispatch(setUser(user));
   }, [user]);
 
-
   const accountView = () => {
-
     if (user) {
       const isAdminOrOwner = user.role === "owner" || user.role === "admin";
       return (
@@ -90,13 +85,12 @@ export default function Navbar({ user }: { user?: User | null }) {
     }
     return (
       <>
-        <Button onClick={() => (window.location.href = '/login')}>
-          {t('nav.getStarted')}
+        <Button onClick={() => (window.location.href = "/login")}>
+          {t("nav.getStarted")}
         </Button>
       </>
     );
   };
-
 
   return (
     <header className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b">
@@ -104,9 +98,11 @@ export default function Navbar({ user }: { user?: User | null }) {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <span className="text-xl font-bold bg-gradient-to-r from-blue-600 
-              to-violet-600 bg-clip-text text-transparent">
-              {t('nav.home')}
+            <span
+              className="text-xl font-bold bg-gradient-to-r from-blue-600 
+              to-violet-600 bg-clip-text text-transparent"
+            >
+              {t("nav.home")}
             </span>
           </Link>
 
@@ -119,13 +115,13 @@ export default function Navbar({ user }: { user?: User | null }) {
               href="#category"
               className="text-sm font-medium text-slate-700 hover:text-slate-900 transition-colors"
             >
-              {t('nav.category')}
+              {t("nav.category")}
             </Link>
             <Link
               href="#blog"
               className="text-sm font-medium text-slate-700 hover:text-slate-900 transition-colors"
             >
-              {t('nav.blog')}
+              {t("nav.blog")}
             </Link>
 
             {accountView()}
@@ -138,13 +134,15 @@ export default function Navbar({ user }: { user?: User | null }) {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
                 <DropdownMenuItem
-                  onSelect={() => setLanguage('en')}
-                  className={language === 'en' ? 'bg-slate-100' : ''}>
+                  onSelect={() => setLanguage("en")}
+                  className={language === "en" ? "bg-slate-100" : ""}
+                >
                   English
                 </DropdownMenuItem>
                 <DropdownMenuItem
-                  onSelect={() => setLanguage('fr')}
-                  className={language === 'fr' ? 'bg-slate-100' : ''}>
+                  onSelect={() => setLanguage("fr")}
+                  className={language === "fr" ? "bg-slate-100" : ""}
+                >
                   Français
                 </DropdownMenuItem>
               </DropdownMenuContent>
@@ -159,5 +157,4 @@ export default function Navbar({ user }: { user?: User | null }) {
       </div>
     </header>
   );
-};
-
+}

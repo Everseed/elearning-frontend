@@ -1,10 +1,4 @@
-import {
-    Card,
-    CardContent,
-    CardFooter,
-    Rating,
-    Separator,
-} from "@ng-youth/ui";
+import { Card, CardContent, CardFooter, Rating, Separator } from "@ng-youth/ui";
 import { Course } from "@ng-youth/lib/models";
 import { formatAbbreviate, uppercaseFirstChar } from "@ng-youth/lib/utils";
 import Image from "next/image";
@@ -17,7 +11,9 @@ export function CourseGridItem({ data }: { data: Course }) {
         <Link href={`/courses/${data.slug}`}>
           <div className="aspect-w-16 aspect-h-9">
             <Image
-              src={data.cover ?? require("@ng-youth/assets/images/placeholder.jpg")}
+              src={
+                data.cover ?? require("@ng-youth/assets/images/placeholder.jpg")
+              }
               className="bg-primary object-cover"
               alt=""
               priority

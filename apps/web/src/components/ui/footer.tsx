@@ -25,28 +25,22 @@ export default function Footer() {
               &copy; {copyRight}
             </div>
           </div>
-          
+
           <div className="flex order-1 lg:order-3 justify-center lg:justify-end text-sm text-muted-foreground space-x-4">
-            <Link
-              href="/privacy-policy"
-              className="hover:text-foreground"
-            >
-              {t('footer.privacy')}
+            <Link href="/privacy-policy" className="hover:text-foreground">
+              {t("footer.privacy")}
             </Link>
             <Link
               href="/terms-and-conditions"
               className="hover:text-foreground"
             >
-               {t('footer.terms')}
+              {t("footer.terms")}
             </Link>
             <Link href="/about-us" className="hover:text-foreground">
-               {t('footer.about')}
+              {t("footer.about")}
             </Link>
-            <Link
-                href="talent"
-                className="hover:text-foreground"
-              >
-                {t('footer.talents')}
+            <Link href="talent" className="hover:text-foreground">
+              {t("footer.talents")}
             </Link>
           </div>
         </div>

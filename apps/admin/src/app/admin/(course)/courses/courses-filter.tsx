@@ -9,12 +9,8 @@ export default function CoursesFilter() {
   const sp = useSearchParams();
 
   const [status, setStatus] = useState<string>(sp.get("status") ?? "");
-  const [access, setAccess] = useState<string>(
-    sp.get("access") ?? ""
-  );
-  const [level, setLevel] = useState<string>(
-    sp.get("level") ?? ""
-  );
+  const [access, setAccess] = useState<string>(sp.get("access") ?? "");
+  const [level, setLevel] = useState<string>(sp.get("level") ?? "");
 
   return (
     <div className="flex flex-wrap gap-3 mb-4">

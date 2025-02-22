@@ -29,7 +29,7 @@ export async function getSession(): Promise<SessionType> {
 
   try {
     payload = jose.decodeJwt(accessToken);
-  // eslint-disable-next-line no-empty
+    // eslint-disable-next-line no-empty
   } catch (error) {}
 
   if (!payload) {

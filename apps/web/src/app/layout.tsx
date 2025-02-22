@@ -1,4 +1,3 @@
-
 import "./globals.css";
 import { I18nProvider } from "@/components/i18n";
 import Footer from "@/components/ui/footer";
@@ -27,7 +26,7 @@ const getUser = async () => {
 
     return resp.ok ? ((await resp.json()) as User) : null;
     // eslint-disable-next-line no-empty
-  } catch (error) { }
+  } catch (error) {}
   return null;
 };
 
@@ -47,7 +46,7 @@ export default async function RootLayout({
         <Providers>
           <Navbar user={user} />
           <div className="pt-16">{children}</div>
-          <Footer/>
+          <Footer />
         </Providers>
       </body>
     </html>

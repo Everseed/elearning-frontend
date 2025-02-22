@@ -19,7 +19,13 @@ import {
   TableHeader,
   TableRow,
 } from "@ng-youth/ui";
-import { CpuIcon, PencilIcon, PencilLineIcon, PlusIcon, Trash2Icon } from "lucide-react";
+import {
+  CpuIcon,
+  PencilIcon,
+  PencilLineIcon,
+  PlusIcon,
+  Trash2Icon,
+} from "lucide-react";
 import { cookies } from "next/headers";
 import Link from "next/link";
 import AuditLogFilter from "./audit-log-filter";
@@ -79,7 +85,7 @@ export default async function AuditLog(props: Props) {
     if (action.event === "created") {
       return (
         <div className={cn([baseClass, "bg-success/20 text-success"])}>
-          <PlusIcon className="size-3 me-1"/>
+          <PlusIcon className="size-3 me-1" />
           Create
         </div>
       );
@@ -88,7 +94,7 @@ export default async function AuditLog(props: Props) {
     if (action.event === "updated") {
       return (
         <div className={cn([baseClass, "bg-primary/20 text-primary"])}>
-          <PencilLineIcon className="size-3 me-1"/>
+          <PencilLineIcon className="size-3 me-1" />
           Update
         </div>
       );
@@ -97,7 +103,7 @@ export default async function AuditLog(props: Props) {
     if (action.event === "deleted") {
       return (
         <div className={cn([baseClass, "bg-destructive/20 text-destructive"])}>
-          <Trash2Icon className="size-3 me-1"/>
+          <Trash2Icon className="size-3 me-1" />
           Delete
         </div>
       );

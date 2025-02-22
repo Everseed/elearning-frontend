@@ -239,7 +239,7 @@ function RichTextEditor({
                     editor.execCommand(
                       "mceInsertContent",
                       false,
-                      div.innerHTML
+                      div.innerHTML,
                     );
                     //editor.dispatch("onEditorChange");
                   }

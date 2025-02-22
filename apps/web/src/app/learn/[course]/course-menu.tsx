@@ -74,7 +74,7 @@ export default function CourseMenu({
                             "flex items-center space-x-2 py-3 px-4",
                             params.lesson === l.slug
                               ? "bg-primary/15"
-                              : undefined
+                              : undefined,
                           )}
                         >
                           {isCompleted(l) ? (
@@ -88,7 +88,7 @@ export default function CourseMenu({
                               "hover:text-primary grow",
                               params.lesson === l.slug
                                 ? "text-primary"
-                                : undefined
+                                : undefined,
                             )}
                             onClick={(evt) => {
                               isMenuOpen && toggle?.();

@@ -16,7 +16,7 @@ export const ProfilePlaceholder = forwardRef<
       ref={ref}
       className={cn(
         "flex items-center justify-center size-[46px] bg-muted rounded-full",
-        className
+        className,
       )}
       {...props}
     >

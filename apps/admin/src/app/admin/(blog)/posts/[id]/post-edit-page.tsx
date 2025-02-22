@@ -466,14 +466,14 @@ export default function PostEditPage({ post }: PostEditPageProps) {
             isOpenSettings
               ? "opacity-70 pointer-events-auto"
               : "opacity-0 pointer-events-none"
-          }`
+          }`,
         )}
       ></div>
       <div
         className={cn(
           "flex flex-col fixed bg-background border-l inset-y-0 right-0 w-full min-w-[100px] max-w-[400px] z-50",
           `transition-transform ease-out`,
-          `${isOpenSettings ? "translate-x-0" : "translate-x-[400px]"}`
+          `${isOpenSettings ? "translate-x-0" : "translate-x-[400px]"}`,
         )}
       >
         <div className="flex items-center gap-2 px-4 h-[65px] border-b">
@@ -593,7 +593,7 @@ export default function PostEditPage({ post }: PostEditPageProps) {
                               if (date > currentDate) {
                                 setValue(
                                   "publishedAt",
-                                  currentDate?.toISOString()
+                                  currentDate?.toISOString(),
                                 );
                               } else {
                                 setValue("publishedAt", date?.toISOString());

@@ -69,9 +69,9 @@ const BlockEditor = ({
     onUpdate: ({ editor }) => {
       onUpdate?.(editor);
     },
-    onContentError: ({error}) => {
+    onContentError: ({ error }) => {
       console.error(error);
-    }
+    },
   });
 
   return (

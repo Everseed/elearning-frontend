@@ -30,7 +30,7 @@ Chart.register(
   ArcElement,
   Filler,
   Tooltip,
-  Legend
+  Legend,
 );
 
 function Providers({ children }: { children: React.ReactNode }) {

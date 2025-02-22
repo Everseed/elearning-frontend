@@ -187,7 +187,7 @@ export default function QuizListing({
           },
           {
             "text-destructive": !isCorrect,
-          }
+          },
         )}
       >
         {isCorrect ? (

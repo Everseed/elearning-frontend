@@ -4,12 +4,16 @@ import { createQuiz, updateQuiz } from "@/lib/actions";
 import { parseErrorResponse } from "@/lib/parse-error-response";
 import { Input, Select } from "@ng-youth/ui/forms";
 import {
-    Alert, Button, Checkbox, Dialog,
-    DialogClose,
-    DialogContent,
-    DialogFooter,
-    DialogHeader,
-    DialogTitle, useToast
+  Alert,
+  Button,
+  Checkbox,
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  useToast,
 } from "@ng-youth/ui";
 import { Lesson, Quiz, QuizType } from "@ng-youth/lib/models";
 import { cn } from "@ng-youth/lib/utils";
@@ -40,7 +44,7 @@ const schema = z.object({
         correct: z.boolean(),
         deleted: z.boolean().optional(),
         sortOrder: z.number(),
-      })
+      }),
     )
     .min(1, { message: "Required at least one answer" })
     .refine((data) => data.filter((a) => a.correct).length > 0, {

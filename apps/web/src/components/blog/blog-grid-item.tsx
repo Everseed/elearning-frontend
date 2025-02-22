@@ -1,14 +1,9 @@
-import {
-    Card,
-    CardContent,
-    CardFooter,
-    Separator,
-} from "@ng-youth/ui";
+import { Card, CardContent, CardFooter, Separator } from "@ng-youth/ui";
 import { Post } from "@ng-youth/lib/models";
 import {
-    formatAbbreviate,
-    formatRelativeTimestamp,
-    wordPerMinute,
+  formatAbbreviate,
+  formatRelativeTimestamp,
+  wordPerMinute,
 } from "@ng-youth/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,7 +15,9 @@ export function BlogGridItem({ data }: { data: Post }) {
         <Link href={`/posts/${data.slug}`}>
           <div className="aspect-w-16 aspect-h-9">
             <Image
-              src={data.cover ?? require("@ng-youth/assets/images/placeholder.jpg")}
+              src={
+                data.cover ?? require("@ng-youth/assets/images/placeholder.jpg")
+              }
               className="bg-primary object-cover"
               alt=""
               priority

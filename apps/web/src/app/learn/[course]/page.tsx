@@ -58,7 +58,7 @@ export default async function EnrolledCoursePage({
 
   if (enrolledCourse.resumeLesson) {
     redirect(
-      `/learn/${params.course}/lessons/${enrolledCourse.resumeLesson.slug}`
+      `/learn/${params.course}/lessons/${enrolledCourse.resumeLesson.slug}`,
     );
   }
 

@@ -1,11 +1,5 @@
 import { API_URL_LOCAL } from "@/lib/constants";
-import {
-  Alert,
-  Card,
-  CardContent,
-  Pagination,
-  Separator,
-} from "@ng-youth/ui";
+import { Alert, Card, CardContent, Pagination, Separator } from "@ng-youth/ui";
 import { Page, Post, Tag } from "@ng-youth/lib/models";
 import {
   buildQueryParams,

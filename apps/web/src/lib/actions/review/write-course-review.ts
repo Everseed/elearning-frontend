@@ -8,7 +8,7 @@ import { revalidatePath } from "next/cache";
 export async function writeCourseReview(
   courseId: number,
   body: object,
-  revalidate?: string
+  revalidate?: string,
 ) {
   const session = await getSession();
 

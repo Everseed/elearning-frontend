@@ -142,68 +142,68 @@ export default function Header({ user }: { user?: User | null }) {
 
   return (
     <header className="border-b">
-        <div className="container mx-auto px-4 py-4">
-          {/* Top Header */}
-          <div className="flex items-center justify-between mb-4">
-            <div className="text-2xl font-bold">EduPro</div>
-            
-            {/* Language Selector */}
-            <Select defaultValue="fr">
-              <SelectTrigger className="w-[120px]">
-                <Globe className="mr-2 h-4 w-4" />
-                <SelectValue placeholder="Langue" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="fr">Français</SelectItem>
-                <SelectItem value="en">English</SelectItem>
-                <SelectItem value="es">Español</SelectItem>
-                <SelectItem value="de">Deutsch</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
+      <div className="container mx-auto px-4 py-4">
+        {/* Top Header */}
+        <div className="flex items-center justify-between mb-4">
+          <div className="text-2xl font-bold">EduPro</div>
 
-          {/* Search and Navigation Bar */}
-          <div className="flex flex-col md:flex-row items-center gap-4">
-            {/* Search Bar */}
-            <div className="relative w-full md:w-1/3">
-              <Search className="absolute left-2 top-2.5 h-4 w-4 text-gray-500" />
-              <Input
-                type="search"
-                placeholder="Rechercher un cours..."
-                className="w-full pl-8"
-              />
-            </div>
-
-            {/* Categories Dropdown */}
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="outline" className="w-full md:w-auto">
-                  Catégories
-                  <ChevronDown className="ml-2 h-4 w-4" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-56">
-                <DropdownMenuItem>Développement Web</DropdownMenuItem>
-                <DropdownMenuItem>Business</DropdownMenuItem>
-                <DropdownMenuItem>Design</DropdownMenuItem>
-                <DropdownMenuItem>Marketing</DropdownMenuItem>
-                <DropdownMenuItem>Data Science</DropdownMenuItem>
-                <DropdownMenuItem>Langues</DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-
-            {/* Main Navigation */}
-            <nav className="flex items-center gap-2 ml-auto">
-              <Button variant="ghost">Cours</Button>
-              <Button variant="ghost">Formateurs</Button>
-              <Button variant="ghost">Blog</Button>
-              <Button variant="ghost">Entreprise</Button>
-              <Button variant="ghost">Aide</Button>
-              <Button variant="outline">Se connecter</Button>
-              <Button>S'inscrire</Button>
-            </nav>
-          </div>
+          {/* Language Selector */}
+          <Select defaultValue="fr">
+            <SelectTrigger className="w-[120px]">
+              <Globe className="mr-2 h-4 w-4" />
+              <SelectValue placeholder="Langue" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="fr">Français</SelectItem>
+              <SelectItem value="en">English</SelectItem>
+              <SelectItem value="es">Español</SelectItem>
+              <SelectItem value="de">Deutsch</SelectItem>
+            </SelectContent>
+          </Select>
         </div>
-      </header>
+
+        {/* Search and Navigation Bar */}
+        <div className="flex flex-col md:flex-row items-center gap-4">
+          {/* Search Bar */}
+          <div className="relative w-full md:w-1/3">
+            <Search className="absolute left-2 top-2.5 h-4 w-4 text-gray-500" />
+            <Input
+              type="search"
+              placeholder="Rechercher un cours..."
+              className="w-full pl-8"
+            />
+          </div>
+
+          {/* Categories Dropdown */}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="outline" className="w-full md:w-auto">
+                Catégories
+                <ChevronDown className="ml-2 h-4 w-4" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="w-56">
+              <DropdownMenuItem>Développement Web</DropdownMenuItem>
+              <DropdownMenuItem>Business</DropdownMenuItem>
+              <DropdownMenuItem>Design</DropdownMenuItem>
+              <DropdownMenuItem>Marketing</DropdownMenuItem>
+              <DropdownMenuItem>Data Science</DropdownMenuItem>
+              <DropdownMenuItem>Langues</DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+
+          {/* Main Navigation */}
+          <nav className="flex items-center gap-2 ml-auto">
+            <Button variant="ghost">Cours</Button>
+            <Button variant="ghost">Formateurs</Button>
+            <Button variant="ghost">Blog</Button>
+            <Button variant="ghost">Entreprise</Button>
+            <Button variant="ghost">Aide</Button>
+            <Button variant="outline">Se connecter</Button>
+            <Button>S'inscrire</Button>
+          </nav>
+        </div>
+      </div>
+    </header>
   );
 }

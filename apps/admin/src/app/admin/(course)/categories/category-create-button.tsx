@@ -19,9 +19,10 @@ export default function CategoryCreateButton() {
         <Button color="primary">New category</Button>
       </DialogTrigger>
 
-      <DialogContent 
-      aria-describedby={undefined}
-      onInteractOutside={(evt) => evt.preventDefault()}>
+      <DialogContent
+        aria-describedby={undefined}
+        onInteractOutside={(evt) => evt.preventDefault()}
+      >
         <DialogHeader>
           <DialogTitle>Create Category</DialogTitle>
         </DialogHeader>

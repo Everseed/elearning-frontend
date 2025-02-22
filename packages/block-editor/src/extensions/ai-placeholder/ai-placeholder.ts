@@ -44,7 +44,7 @@ export const AiPlaceholder = Node.create<AiPlaceholderOptions>({
               { from, to },
               {
                 type: this.name,
-              }
+              },
             )
             .setMeta("preventUpdate", true)
             .run();

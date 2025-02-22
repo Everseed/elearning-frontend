@@ -5,7 +5,7 @@ import Select, { Props } from "react-select";
 
 export default function ReactSelect<
   Option = unknown,
-  IsMulti extends boolean = false
+  IsMulti extends boolean = false,
 >({
   label,
   error,
@@ -36,12 +36,12 @@ export default function ReactSelect<
             if (error) {
               return cn(
                 "flex py-1 rounded-md border border-destructive bg-background",
-                isFocused ? "ring-[4px] ring-danger/30" : ""
+                isFocused ? "ring-[4px] ring-danger/30" : "",
               );
             }
             return cn(
               "flex py-1 rounded-md border bg-background",
-              isFocused ? "border-primary" : "border-border"
+              isFocused ? "border-primary" : "border-border",
             );
           },
           multiValue: (props) => {
@@ -56,11 +56,13 @@ export default function ReactSelect<
           menu: (props) => {
             return cn("!bg-background dark:border");
           },
-          option: ({isSelected}) => {
+          option: ({ isSelected }) => {
             if (isSelected) {
               return cn("!bg-primary !text-primary-foreground");
             }
-            return cn("!bg-background hover:!bg-muted focus:!bg-muted text-foreground");
+            return cn(
+              "!bg-background hover:!bg-muted focus:!bg-muted text-foreground",
+            );
           },
         }}
         {...props}

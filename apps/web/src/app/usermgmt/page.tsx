@@ -3,7 +3,7 @@ import ResetPasswordPage from "./reset-password-page";
 import VerifyEmailPage from "./verify-email-page";
 
 export default function UserManagement({
-  searchParams
+  searchParams,
 }: {
   searchParams: { [key: string]: string | string[] | undefined };
 }) {

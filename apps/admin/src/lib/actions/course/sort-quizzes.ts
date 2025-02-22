@@ -8,7 +8,7 @@ import { revalidatePath } from "next/cache";
 export async function sortQuizzes(
   courseId: number,
   body: any,
-  revalidate?: string
+  revalidate?: string,
 ) {
   const session = await getSession();
 

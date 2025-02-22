@@ -4,29 +4,29 @@ import { deleteQuiz, sortQuizzes } from "@/lib/actions";
 import { parseErrorResponse } from "@/lib/parse-error-response";
 import { DndContext, DragEndEvent } from "@dnd-kit/core";
 import {
-    SortableContext,
-    arrayMove,
-    useSortable,
-    verticalListSortingStrategy,
+  SortableContext,
+  arrayMove,
+  useSortable,
+  verticalListSortingStrategy,
 } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import {
-    AlertDialog,
-    AlertDialogCancel,
-    AlertDialogContent,
-    AlertDialogDescription,
-    AlertDialogFooter,
-    AlertDialogHeader,
-    AlertDialogTitle,
-    AlertDialogTrigger,
-    Button,
-    Checkbox,
-    RadioButton,
-    Tooltip,
-    TooltipContent,
-    TooltipProvider,
-    TooltipTrigger,
-    useToast,
+  AlertDialog,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+  Button,
+  Checkbox,
+  RadioButton,
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+  useToast,
 } from "@ng-youth/ui";
 import { Lesson, Quiz } from "@ng-youth/lib/models";
 import { debounce } from "@ng-youth/lib/utils";
@@ -192,7 +192,7 @@ export default function QuizListing({ lesson }: { lesson: Lesson }) {
         await sortQuizzes(
           lesson.chapter?.course?.id ?? 0,
           quizzes.map((c, i) => ({ id: c.id, sortOrder: i })),
-          `/admin/courses/${lesson.chapter?.course?.id}/lessons/${lesson.id}`
+          `/admin/courses/${lesson.chapter?.course?.id}/lessons/${lesson.id}`,
         );
       } catch (error) {
         toast({
@@ -202,12 +202,12 @@ export default function QuizListing({ lesson }: { lesson: Lesson }) {
         });
       }
     },
-    [lesson, toast]
+    [lesson, toast],
   );
 
   const debouncedSortUpdate = useMemo(
     () => debounce(handleSort, 2000),
-    [handleSort]
+    [handleSort],
   );
 
   return (

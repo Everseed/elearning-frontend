@@ -1,11 +1,12 @@
 "use client";
 
 import {
-    Button, Dialog,
-    DialogContent,
-    DialogHeader,
-    DialogTitle,
-    DialogTrigger
+  Button,
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
 } from "@ng-youth/ui";
 import { useState } from "react";
 import TagEdit from "./tag-edit";
@@ -18,9 +19,7 @@ export default function TagCreateButton() {
         <Button color="primary">New tag</Button>
       </DialogTrigger>
 
-      <DialogContent
-        onInteractOutside={(evt) => evt.preventDefault()}
-      >
+      <DialogContent onInteractOutside={(evt) => evt.preventDefault()}>
         <DialogHeader>
           <DialogTitle>Create Tag</DialogTitle>
         </DialogHeader>

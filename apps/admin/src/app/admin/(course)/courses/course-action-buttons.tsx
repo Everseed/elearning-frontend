@@ -3,20 +3,20 @@
 import { deleteCourse } from "@/lib/actions";
 import { parseErrorResponse } from "@/lib/parse-error-response";
 import {
-    AlertDialog,
-    AlertDialogCancel,
-    AlertDialogContent,
-    AlertDialogDescription,
-    AlertDialogFooter,
-    AlertDialogHeader,
-    AlertDialogTitle,
-    AlertDialogTrigger,
-    Button,
-    Tooltip,
-    TooltipContent,
-    TooltipProvider,
-    TooltipTrigger,
-    useToast,
+  AlertDialog,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+  Button,
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+  useToast,
 } from "@ng-youth/ui";
 import { Course } from "@ng-youth/lib/models";
 import { Edit, LoaderCircle, Trash2 } from "lucide-react";

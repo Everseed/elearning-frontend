@@ -4,36 +4,36 @@ import { deleteChapter, sortChapters } from "@/lib/actions";
 import { parseErrorResponse } from "@/lib/parse-error-response";
 import { DndContext, DragEndEvent } from "@dnd-kit/core";
 import {
-    SortableContext,
-    arrayMove,
-    useSortable,
-    verticalListSortingStrategy,
+  SortableContext,
+  arrayMove,
+  useSortable,
+  verticalListSortingStrategy,
 } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-    AlertDialog,
-    AlertDialogCancel,
-    AlertDialogContent,
-    AlertDialogDescription,
-    AlertDialogFooter,
-    AlertDialogHeader,
-    AlertDialogTitle,
-    AlertDialogTrigger,
-    Button,
-    Dialog,
-    DialogContent,
-    DialogHeader,
-    DialogTitle,
-    DialogTrigger,
-    Tooltip,
-    TooltipContent,
-    TooltipProvider,
-    TooltipTrigger,
-    useToast,
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+  AlertDialog,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+  Button,
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+  useToast,
 } from "@ng-youth/ui";
 import { Chapter, Course } from "@ng-youth/lib/models";
 import { debounce } from "@ng-youth/lib/utils";
@@ -238,7 +238,7 @@ export default function CourseChaptersEdit({ course }: { course: Course }) {
       try {
         await sortChapters(
           course.id,
-          chapters.map((c, i) => ({ id: c.id, sortOrder: i }))
+          chapters.map((c, i) => ({ id: c.id, sortOrder: i })),
         );
       } catch (error) {
         toast({
@@ -248,12 +248,12 @@ export default function CourseChaptersEdit({ course }: { course: Course }) {
         });
       }
     },
-    [course.id, toast]
+    [course.id, toast],
   );
 
   const debouncedSortUpdate = useMemo(
     () => debounce(handleSort, 2000),
-    [handleSort]
+    [handleSort],
   );
 
   return (

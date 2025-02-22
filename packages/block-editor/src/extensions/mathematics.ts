@@ -74,7 +74,7 @@ export const Mathematics = Node.create<MathematicsOptions>({
                 attrs: {
                   latex: latex,
                 },
-              }
+              },
             )
             .setTextSelection({ from: from, to: from + 1 })
             .run();

@@ -24,7 +24,6 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   if ((await headers()).get("revalidate") === "true") {
     revalidatePath("/admin", "layout");
   }

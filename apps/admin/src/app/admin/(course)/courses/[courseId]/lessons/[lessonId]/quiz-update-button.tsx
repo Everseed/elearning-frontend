@@ -1,10 +1,6 @@
 "use client";
 
-import {
-    Button, Tooltip,
-    TooltipContent,
-    TooltipTrigger
-} from "@ng-youth/ui";
+import { Button, Tooltip, TooltipContent, TooltipTrigger } from "@ng-youth/ui";
 import { Lesson, Quiz } from "@ng-youth/lib/models";
 import { Edit } from "lucide-react";
 import { useState } from "react";

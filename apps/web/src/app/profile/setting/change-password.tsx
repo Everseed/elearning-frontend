@@ -58,7 +58,7 @@ export default function ChangePassword() {
       const result = await signInWithEmailAndPassword(
         auth,
         user.email,
-        values.oldPassword
+        values.oldPassword,
       );
       await updatePassword(result.user, values.newPassword);
       await auth.signOut();

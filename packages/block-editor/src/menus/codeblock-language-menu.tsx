@@ -1,9 +1,4 @@
-import {
-  Button,
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@ng-youth/ui";
+import { Button, Popover, PopoverContent, PopoverTrigger } from "@ng-youth/ui";
 import { cn } from "@ng-youth/lib/utils";
 import { Editor } from "@tiptap/core";
 import { FloatingMenu, useEditorState } from "@tiptap/react";
@@ -55,7 +50,7 @@ export const CodeBlockLanguageMenu = ({
             if (node.type.name !== "codeBlock") {
               return;
             }
-            
+
             nodePos = p;
             return false;
           });

@@ -8,7 +8,7 @@ import { revalidatePath } from "next/cache";
 export async function updateSiteSetting(
   value: string,
   path: string,
-  revalidate?: string
+  revalidate?: string,
 ) {
   const session = await getSession();
 

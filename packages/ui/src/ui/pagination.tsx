@@ -45,7 +45,7 @@ export function Pagination({
     }
 
     const pages = Array(totalPage > renderPage ? renderPage : totalPage).fill(
-      0
+      0,
     );
     const len = pages.length;
 

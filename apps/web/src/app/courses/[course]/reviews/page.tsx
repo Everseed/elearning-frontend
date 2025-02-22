@@ -70,7 +70,7 @@ const getUserReview = async (courseId: number) => {
 
 export async function generateMetadata(
   { params }: Props,
-  parent: ResolvingMetadata
+  parent: ResolvingMetadata,
 ): Promise<Metadata> {
   try {
     const course = await getCourse(params.course);

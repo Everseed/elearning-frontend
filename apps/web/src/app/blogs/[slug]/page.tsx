@@ -59,7 +59,7 @@ const getPosts = async (tagId: number, page?: string) => {
 
 export async function generateMetadata(
   { params }: Props,
-  parent: ResolvingMetadata
+  parent: ResolvingMetadata,
 ): Promise<Metadata> {
   try {
     const tag = await getTag(params.slug);

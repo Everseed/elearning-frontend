@@ -2,16 +2,16 @@
 import { publishPost, unpublishPost } from "@/lib/actions";
 import { parseErrorResponse } from "@/lib/parse-error-response";
 import {
-    AlertDialog,
-    AlertDialogCancel,
-    AlertDialogContent,
-    AlertDialogDescription,
-    AlertDialogFooter,
-    AlertDialogHeader,
-    AlertDialogTitle,
-    AlertDialogTrigger,
-    Button,
-    useToast,
+  AlertDialog,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+  Button,
+  useToast,
 } from "@ng-youth/ui";
 import { Post } from "@ng-youth/lib/models";
 import { LoaderCircle } from "lucide-react";

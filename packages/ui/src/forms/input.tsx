@@ -14,7 +14,7 @@ export interface InputProps
 const Input = forwardRef<HTMLInputElement, InputProps>(
   (
     { label, className, wrapperClass, error, hideErrorMessage, ...props },
-    ref
+    ref,
   ) => {
     const isInvalid = !!error;
 
@@ -32,7 +32,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
           ref={ref}
           className={cn(
             `${isInvalid ? "invalid-input" : "default-input"} rounded-md`,
-            className
+            className,
           )}
           {...props}
         />
@@ -41,7 +41,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
         )}
       </div>
     );
-  }
+  },
 );
 
 Input.displayName = "Input";

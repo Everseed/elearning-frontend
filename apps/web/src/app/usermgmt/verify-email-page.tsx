@@ -24,7 +24,7 @@ export default function VerifyEmailPage({ oobCode }: { oobCode: string }) {
           `${API_URL}/auth/verify-email?oobCode=${code}`,
           {
             method: "POST",
-          }
+          },
         );
 
         await validateResponse(verifyResponse, true);
@@ -38,7 +38,7 @@ export default function VerifyEmailPage({ oobCode }: { oobCode: string }) {
         setError(parseErrorResponse(error));
       }
     },
-    [router]
+    [router],
   );
 
   useEffect(() => {

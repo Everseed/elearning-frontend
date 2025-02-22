@@ -48,7 +48,7 @@ function EnrolledLineChart() {
     },
     {
       revalidateOnFocus: false,
-    }
+    },
   );
 
   const years = useMemo(() => {

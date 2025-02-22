@@ -115,7 +115,7 @@ const getRelatedCourses = async (slug: string) => {
 
 export async function generateMetadata(
   { params }: Props,
-  parent: ResolvingMetadata
+  parent: ResolvingMetadata,
 ): Promise<Metadata> {
   try {
     const course = await getCourse(params.course);

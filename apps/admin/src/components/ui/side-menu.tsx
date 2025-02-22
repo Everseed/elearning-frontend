@@ -167,7 +167,7 @@ export default function SideMenu() {
             color="primary"
             className={cn(
               "mt-auto mb-2",
-              !isAdminOrOwner ? "hidden" : undefined
+              !isAdminOrOwner ? "hidden" : undefined,
             )}
           >
             Settings

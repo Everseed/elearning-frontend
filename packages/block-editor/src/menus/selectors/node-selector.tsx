@@ -1,9 +1,4 @@
-import {
-  Button,
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@ng-youth/ui";
+import { Button, Popover, PopoverContent, PopoverTrigger } from "@ng-youth/ui";
 import { Editor } from "@tiptap/core";
 import { useEditorState } from "@tiptap/react";
 import {
@@ -121,7 +116,7 @@ export const NodeSelector = ({ editor }: { editor: Editor }) => {
   const activeItems = items.filter((item) => item.isActive(editorState));
 
   const name =
-    activeItems.length > 1 ? "Multiple" : activeItems.pop()?.name ?? "Text";
+    activeItems.length > 1 ? "Multiple" : (activeItems.pop()?.name ?? "Text");
 
   return (
     <Popover>

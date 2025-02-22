@@ -21,7 +21,7 @@ export function ProfileAvatar({
         height={0}
         className={cn(
           "rounded-full border object-cover bg-muted size-[40px]",
-          className
+          className,
         )}
         style={style}
       />
@@ -31,7 +31,7 @@ export function ProfileAvatar({
     <div
       className={cn(
         "size-[40px] bg-primary rounded-full uppercase text-primary-foreground place-content-center text-center border border-primary font-medium text-base",
-        className
+        className,
       )}
       style={style}
     >

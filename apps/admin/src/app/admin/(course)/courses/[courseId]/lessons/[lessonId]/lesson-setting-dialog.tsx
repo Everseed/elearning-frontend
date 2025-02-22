@@ -4,12 +4,15 @@ import { updateLesson } from "@/lib/actions";
 import { parseErrorResponse } from "@/lib/parse-error-response";
 import { Input } from "@ng-youth/ui/forms";
 import {
-    Button, Dialog,
-    DialogClose,
-    DialogContent,
-    DialogFooter,
-    DialogHeader,
-    DialogTitle, Switch, useToast
+  Button,
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  Switch,
+  useToast,
 } from "@ng-youth/ui";
 import { Audit, Lesson } from "@ng-youth/lib/models";
 import { setStringToSlug } from "@ng-youth/lib/utils";

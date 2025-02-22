@@ -38,7 +38,7 @@ function TitleInput({
         ref={ref}
         className={cn(
           `focus:ring-transparent border-0 outline-0 font-semibold p-0 text-4xl lg:text-5xl bg-transparent text-foreground placeholder:text-muted-foreground resize-none appearance-none h-auto scrollbar-hide w-full overflow-hidden`,
-          className
+          className,
         )}
         onKeyDown={(evt) => {
           if (evt.key === "Enter") {

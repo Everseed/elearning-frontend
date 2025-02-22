@@ -17,7 +17,10 @@ const Textarea = forwardRef<HTMLTextAreaElement, InputProps>(
     return (
       <div className={cn(`flex flex-col`, wrapperClass)}>
         {label && (
-          <label htmlFor={props.id} className="font-medium mb-1 text-foreground">
+          <label
+            htmlFor={props.id}
+            className="font-medium mb-1 text-foreground"
+          >
             {label}
           </label>
         )}
@@ -25,14 +28,16 @@ const Textarea = forwardRef<HTMLTextAreaElement, InputProps>(
           ref={ref}
           className={cn(
             `${isInvalid ? "invalid-input" : "default-input"} rounded-md`,
-            className
+            className,
           )}
           {...props}
         />
-        {error && <div className="text-destructive text-sm mt-1.5">{error}</div>}
+        {error && (
+          <div className="text-destructive text-sm mt-1.5">{error}</div>
+        )}
       </div>
     );
-  }
+  },
 );
 
 Textarea.displayName = "Textarea";

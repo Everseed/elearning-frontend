@@ -67,7 +67,7 @@ const getEnrolledCourse = async (courseId: number) => {
 
 export async function generateMetadata(
   { params }: Props,
-  parent: ResolvingMetadata
+  parent: ResolvingMetadata,
 ): Promise<Metadata> {
   try {
     const lesson = await getLesson(params.lesson);
@@ -114,7 +114,7 @@ export default async function LessonDetail({ params }: Props) {
   }
 
   const enrolledCourse = await getEnrolledCourse(
-    lesson.chapter?.course?.id ?? 0
+    lesson.chapter?.course?.id ?? 0,
   );
 
   return (

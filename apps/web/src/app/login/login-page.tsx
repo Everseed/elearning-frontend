@@ -4,7 +4,14 @@ import { applyAuthCookies } from "@/lib/actions";
 import { firebaseAuth } from "@/lib/firebase.config";
 import { parseErrorResponse } from "@/lib/parse-error-response";
 import { Input, PasswordInput } from "@ng-youth/ui/forms";
-import { Alert, Button, Card, CardContent, CardFooter, Separator } from "@ng-youth/ui";
+import {
+  Alert,
+  Button,
+  Card,
+  CardContent,
+  CardFooter,
+  Separator,
+} from "@ng-youth/ui";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { inMemoryPersistence, signInWithEmailAndPassword } from "firebase/auth";
 import { LoaderCircle } from "lucide-react";
@@ -47,7 +54,7 @@ function LoginPage() {
       const result = await signInWithEmailAndPassword(
         auth,
         values.username,
-        values.password
+        values.password,
       );
 
       const idToken = await result.user.getIdToken();

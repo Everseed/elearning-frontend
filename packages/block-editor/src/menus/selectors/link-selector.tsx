@@ -1,10 +1,5 @@
 import { Input } from "@ng-youth/ui/forms";
-import {
-  Button,
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@ng-youth/ui";
+import { Button, Popover, PopoverContent, PopoverTrigger } from "@ng-youth/ui";
 import { cn } from "@ng-youth/lib/utils";
 import { Editor } from "@tiptap/core";
 import { useEditorState } from "@tiptap/react";

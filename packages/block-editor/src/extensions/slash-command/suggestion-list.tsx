@@ -34,7 +34,7 @@ const SuggestionList = forwardRef<SuggestionListHandle, SuggestionListProps>(
 
     const upHandler = () => {
       setSelectedIndex(
-        (selectedIndex + props.items.length - 1) % props.items.length
+        (selectedIndex + props.items.length - 1) % props.items.length,
       );
     };
 
@@ -81,7 +81,7 @@ const SuggestionList = forwardRef<SuggestionListHandle, SuggestionListProps>(
                   ],
                   {
                     "bg-accent": i === selectedIndex,
-                  }
+                  },
                 )}
                 onClick={() => {
                   props.command(item);
@@ -106,7 +106,7 @@ const SuggestionList = forwardRef<SuggestionListHandle, SuggestionListProps>(
         )}
       </div>
     );
-  }
+  },
 );
 
 export default SuggestionList;

@@ -1,8 +1,8 @@
 import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
 } from "@ng-youth/ui";
 import { BookText, Bookmark, Settings, User } from "lucide-react";
 import Link from "next/link";
@@ -21,7 +21,10 @@ export default function ProfileLayout({ children }: { children: ReactNode }) {
     icon: ReactNode;
   }) {
     return (
-      <Link href={href} className={"flex p-2 items-center text-foreground hover:text-primary"}>
+      <Link
+        href={href}
+        className={"flex p-2 items-center text-foreground hover:text-primary"}
+      >
         {icon}
         <span>{title}</span>
       </Link>

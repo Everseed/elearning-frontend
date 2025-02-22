@@ -3,7 +3,14 @@
 import { firebaseAuth } from "@/lib/firebase.config";
 import { parseErrorResponse } from "@/lib/parse-error-response";
 import { PasswordInput } from "@ng-youth/ui/forms";
-import { Alert, Button, Card, CardContent, Loading, useToast } from "@ng-youth/ui";
+import {
+  Alert,
+  Button,
+  Card,
+  CardContent,
+  Loading,
+  useToast,
+} from "@ng-youth/ui";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { applyActionCode, confirmPasswordReset } from "firebase/auth";
 import { LoaderCircle } from "lucide-react";

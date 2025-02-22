@@ -45,8 +45,12 @@ const AiWriterView = ({ editor, node, getPos }: NodeViewProps) => {
   return (
     <NodeViewWrapper>
       <div className="ai-writer flex flex-col py-4 px-5 rounded-md border bg-card not-draggable select-none">
-        {error && <Alert variant="destructive" className="mb-4">{error.message}</Alert>}
-        
+        {error && (
+          <Alert variant="destructive" className="mb-4">
+            {error.message}
+          </Alert>
+        )}
+
         {!error && !!message && (
           <>
             <label className="mb-1 font-medium text-foreground">Preview</label>

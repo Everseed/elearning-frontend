@@ -23,7 +23,7 @@ export const TableOptionsMenu = ({ editor }: { editor: Editor | null }) => {
     return null;
   }
 
-  const menuItemClass = cn("px-2 py-1.5 text-sm hover:bg-accent rounded-md")
+  const menuItemClass = cn("px-2 py-1.5 text-sm hover:bg-accent rounded-md");
 
   return (
     <FloatingMenu

@@ -24,7 +24,7 @@ function Rating({ rating, size = "default" }: RatingProps) {
   }
 
   const defaultColor = cn(
-    "stroke-slate-300 text-slate-300 dark:stroke-slate-500 dark:text-slate-500"
+    "stroke-slate-300 text-slate-300 dark:stroke-slate-500 dark:text-slate-500",
   );
   const activeColor = cn("stroke-warning text-warning");
 

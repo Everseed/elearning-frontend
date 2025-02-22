@@ -1,9 +1,4 @@
-import {
-  Button,
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@ng-youth/ui";
+import { Button, Popover, PopoverContent, PopoverTrigger } from "@ng-youth/ui";
 import { Editor } from "@tiptap/core";
 import {
   ArrowDownNarrowWideIcon,

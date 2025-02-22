@@ -14,7 +14,7 @@ export default async function Login() {
   const accessToken = cookieStore.get("access_token")?.value;
 
   if (accessToken) {
-    revalidatePath("/", "layout")
+    revalidatePath("/", "layout");
     redirect("/");
   }
 

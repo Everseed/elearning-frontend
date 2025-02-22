@@ -13,7 +13,7 @@ import { cookies } from "next/headers";
 import Image from "next/image";
 import Link from "next/link";
 import { cache } from "react";
-import { ContentRenderer } from "@ng-youth/block-editor"
+import { ContentRenderer } from "@ng-youth/block-editor";
 
 interface Props {
   params: { slug: string };
@@ -50,7 +50,7 @@ const getUser = async () => {
 
 export async function generateMetadata(
   { params }: Props,
-  parent: ResolvingMetadata
+  parent: ResolvingMetadata,
 ): Promise<Metadata> {
   try {
     const post = await getPost(params.slug);
@@ -106,7 +106,7 @@ export default async function BlogPost({ params }: Props) {
       <div
         className={cn(
           "flex items-center gap-3 mb-4",
-          authorCount > 1 ? "-ml-[3px]" : undefined
+          authorCount > 1 ? "-ml-[3px]" : undefined,
         )}
       >
         <div className="flex flex-shrink-0">
@@ -119,7 +119,7 @@ export default async function BlogPost({ params }: Props) {
                 className={cn(
                   "size-[54px]",
                   i > 0 ? "ml-[-27px]" : undefined,
-                  authorCount > 1 ? "border-3 border-background" : undefined
+                  authorCount > 1 ? "border-3 border-background" : undefined,
                 )}
                 style={{
                   zIndex: authorCount - i,

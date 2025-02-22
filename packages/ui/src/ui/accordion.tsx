@@ -30,7 +30,7 @@ const AccordionTrigger = React.forwardRef<
         className,
         iconType === "plus"
           ? "[&[data-state=open]&svg]:rotate-180 [&[data-state=open]>#icon>#plus]:opacity-0 [&[data-state=open]>#icon>#minus]:opacity-100 [&[data-state=closed]>#icon>#plus]:opacity-100 [&[data-state=closed]>#icon>#minus]:opacity-0"
-          : undefined
+          : undefined,
       )}
       {...props}
     >

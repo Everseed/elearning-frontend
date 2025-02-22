@@ -10,7 +10,7 @@ export default function PostsFilter() {
 
   const [status, setStatus] = useState<string>(sp.get("status") ?? "");
   const [visibility, setVisibility] = useState<string>(
-    sp.get("visibility") ?? ""
+    sp.get("visibility") ?? "",
   );
 
   return (

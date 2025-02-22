@@ -13,7 +13,7 @@ export const RadioButton = forwardRef<HTMLDivElement, RadioButtonProps>(
       <div
         className={cn(
           "size-4 rounded-full border border-primary text-primary flex items-center justify-center",
-          className
+          className,
         )}
         {...props}
       >
@@ -24,7 +24,7 @@ export const RadioButton = forwardRef<HTMLDivElement, RadioButtonProps>(
         />
       </div>
     );
-  }
+  },
 );
 
 RadioButton.displayName = "RadioButton";

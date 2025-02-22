@@ -19,7 +19,9 @@ const PasswordInput = forwardRef<HTMLInputElement, InputProps>(
 
     return (
       <div className={cn(`flex flex-col`, wrapperClass)}>
-        {label && <label className="font-medium mb-1 text-foreground">{label}</label>}
+        {label && (
+          <label className="font-medium mb-1 text-foreground">{label}</label>
+        )}
         <div className={`flex rounded`}>
           <input
             ref={ref}
@@ -28,7 +30,7 @@ const PasswordInput = forwardRef<HTMLInputElement, InputProps>(
               `flex-grow ${
                 isInvalid ? "invalid-input" : "default-input"
               } rounded-l-md z-10`,
-              className
+              className,
             )}
             {...props}
           />
@@ -40,10 +42,12 @@ const PasswordInput = forwardRef<HTMLInputElement, InputProps>(
             {isPassword ? <EyeOff size={20} /> : <Eye size={20} />}
           </div>
         </div>
-        {error && <div className="text-destructive text-sm mt-1.5">{error}</div>}
+        {error && (
+          <div className="text-destructive text-sm mt-1.5">{error}</div>
+        )}
       </div>
     );
-  }
+  },
 );
 
 PasswordInput.displayName = "PasswordInput";

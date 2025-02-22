@@ -39,7 +39,7 @@ function Tabs({ defaultTabKey, className, onTabChange, children }: TabsProps) {
       <ul
         className={cn(
           `flex flex-nowrap overflow-auto scrollbar-none border-b`,
-          className
+          className,
         )}
       >
         {list.map((item) => {

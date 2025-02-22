@@ -4,13 +4,20 @@ import { applyAuthCookies } from "@/lib/actions";
 import { firebaseAuth } from "@/lib/firebase.config";
 import { parseErrorResponse } from "@/lib/parse-error-response";
 import { Input, PasswordInput } from "@ng-youth/ui/forms";
-import { Alert, Button, Card, CardContent, CardFooter, Separator } from "@ng-youth/ui";
+import {
+  Alert,
+  Button,
+  Card,
+  CardContent,
+  CardFooter,
+  Separator,
+} from "@ng-youth/ui";
 import { zodResolver } from "@hookform/resolvers/zod";
 import {
-    createUserWithEmailAndPassword,
-    inMemoryPersistence,
-    sendEmailVerification,
-    updateProfile,
+  createUserWithEmailAndPassword,
+  inMemoryPersistence,
+  sendEmailVerification,
+  updateProfile,
 } from "firebase/auth";
 import { LoaderCircle } from "lucide-react";
 import Image from "next/image";
@@ -61,7 +68,7 @@ function SignUpPage() {
       const result = await createUserWithEmailAndPassword(
         auth,
         values.email,
-        values.password
+        values.password,
       );
       sendEmailVerification(result.user);
       await updateProfile(result.user, {

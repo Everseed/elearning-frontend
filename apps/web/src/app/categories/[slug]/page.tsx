@@ -59,7 +59,7 @@ const getCourses = async (category: string, page?: string) => {
 
 export async function generateMetadata(
   { params }: Props,
-  parent: ResolvingMetadata
+  parent: ResolvingMetadata,
 ): Promise<Metadata> {
   try {
     const category = await getCategory(params.slug);

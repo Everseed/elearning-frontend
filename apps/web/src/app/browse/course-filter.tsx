@@ -1,12 +1,13 @@
 "use client";
 
 import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-    RadioGroup, RadioGroupItem,
-    Separator,
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+  RadioGroup,
+  RadioGroupItem,
+  Separator,
 } from "@ng-youth/ui";
 import { Category } from "@ng-youth/lib/models";
 import { formatAbbreviate } from "@ng-youth/lib/utils";

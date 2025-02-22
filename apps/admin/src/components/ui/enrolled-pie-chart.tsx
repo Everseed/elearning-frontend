@@ -23,7 +23,7 @@ function EnrolledPieChart({ summary }: { summary: DashboardSummary }) {
 
     const chartData: ChartData<"doughnut"> = {
       labels: Object.keys(summary.enrolledByLevel).map((k) =>
-        uppercaseFirstChar(k)
+        uppercaseFirstChar(k),
       ),
       datasets: [
         {
@@ -79,7 +79,7 @@ function EnrolledPieChart({ summary }: { summary: DashboardSummary }) {
   const total = useMemo(() => {
     return Object.values(summary.enrolledByLevel).reduce(
       (pv, cv) => pv + cv,
-      0
+      0,
     );
   }, [summary]);
 

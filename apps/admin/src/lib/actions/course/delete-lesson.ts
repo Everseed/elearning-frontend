@@ -9,7 +9,7 @@ import { redirect } from "next/navigation";
 export async function deleteLesson(
   courseId: number,
   lessonId: number,
-  needRedirect?: boolean
+  needRedirect?: boolean,
 ) {
   const session = await getSession();
 

@@ -13,9 +13,7 @@ const getAboutUs = async () => {
     cache: "no-store",
   });
 
-  return resp
-    .text()
-    .catch((e) => undefined);
+  return resp.text().catch((e) => undefined);
 };
 
 export default async function AboutUs() {

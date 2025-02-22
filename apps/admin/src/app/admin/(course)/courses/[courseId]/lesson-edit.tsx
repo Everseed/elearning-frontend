@@ -3,7 +3,13 @@
 import { createLesson, updateLesson } from "@/lib/actions";
 import { parseErrorResponse } from "@/lib/parse-error-response";
 import { Input, Select } from "@ng-youth/ui/forms";
-import { Button, DialogClose, DialogFooter, Switch, useToast } from "@ng-youth/ui";
+import {
+  Button,
+  DialogClose,
+  DialogFooter,
+  Switch,
+  useToast,
+} from "@ng-youth/ui";
 import { Chapter, Course, Lesson, LessonType } from "@ng-youth/lib/models";
 import { setStringToSlug } from "@ng-youth/lib/utils";
 import { zodResolver } from "@hookform/resolvers/zod";

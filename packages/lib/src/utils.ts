@@ -40,7 +40,7 @@ export function formatTimestamp(timestamp?: number | string, withTime = false) {
 
 export function formatRelativeTimestamp(
   timestamp?: number | string,
-  withTime = false
+  withTime = false,
 ) {
   if (!timestamp) {
     return "";
@@ -63,7 +63,7 @@ export function formatRelativeTimestamp(
 
 export function debounce<I, R>(
   callback: (input: I) => R | Promise<R>,
-  timeout = 2000
+  timeout = 2000,
 ) {
   if (typeof window === "undefined") {
     return () => {};
@@ -156,7 +156,7 @@ export function buildQueryParams(params: any) {
 export function pluralize(
   count: number | bigint,
   label: string,
-  plural?: string
+  plural?: string,
 ) {
   if (count > 1) {
     return `${formatNumber(count)} ${plural ? plural : label + "s"}`;

@@ -17,21 +17,30 @@ const Select = forwardRef<HTMLSelectElement, InputProps>(
 
     return (
       <div className={cn(`flex flex-col`, wrapperClass)}>
-        {label && <label htmlFor={props.id} className="font-medium mb-1 text-foreground">{label}</label>}
+        {label && (
+          <label
+            htmlFor={props.id}
+            className="font-medium mb-1 text-foreground"
+          >
+            {label}
+          </label>
+        )}
         <select
           ref={ref}
           className={cn(
             `${isInvalid ? "invalid-input" : "default-input"} rounded-md`,
-            className
+            className,
           )}
           {...props}
         >
           {children}
         </select>
-        {error && <div className="text-destructive text-sm mt-1.5">{error}</div>}
+        {error && (
+          <div className="text-destructive text-sm mt-1.5">{error}</div>
+        )}
       </div>
     );
-  }
+  },
 );
 
 Select.displayName = "Select";

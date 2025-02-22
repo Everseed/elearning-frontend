@@ -9,7 +9,7 @@ import defaultTheme from "tailwindcss/defaultTheme";
 
 // We want each package to be responsible for its own content.
 const config: Omit<Config, "content"> = {
-/*   darkMode: ["class"],
+  /*   darkMode: ["class"],
   corePlugins: {
     aspectRatio: false,
   }, */
